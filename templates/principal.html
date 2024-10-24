@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generador de Resumen de Texto</title>
+    <!-- Enlace al archivo CSS en la carpeta /static/css -->
+    <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video autoplay loop muted playsinline class="video-fondo">
+        <source src="/static/videos/fondo1.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="container">
+        <h1 class="titulo">Generador de Resumen de Texto</h1>
+        <div class="input-area">
+            <label for="original-text" class="etiqueta">Pega tu texto aquí:</label>
+            <textarea id="original-text" placeholder="Escribe o pega el texto..." rows="8" class="texto-area"></textarea>
+        </div>
+        <button id="resumir-btn" class="boton">Generar Resumen</button>
+        <div class="resumen" id="resumen-container" style="display: none;">
+            <h2 class="subtitulo">Texto Resumido:</h2>
+            <p id="resumen-text" class="texto-resumido"></p>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JS en la carpeta /static/js -->
+    <script src="/static/js/java.js"></script>
+</body>
+</html>
